@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Calc</title>
+
+    <style>
+        .container {
+            width: calc(100% - 40px);
+            margin: 20px;
+            background: lightblue;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: calc(50% - 20px);
+            background: lightgreen;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Using calc()</h1>
+
+    <div class="box">
+        Width is calculated using CSS calc().
+    </div>
+
+</div>
+
+</body>
+</html>

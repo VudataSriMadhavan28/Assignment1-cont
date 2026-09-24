@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Transformations</title>
+
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            background: lightblue;
+            margin: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s;
+        }
+
+        .two-d:hover {
+            transform: rotate(20deg) scale(1.2);
+        }
+
+        .three-d:hover {
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box two-d">
+    2D Transform
+</div>
+
+<div class="box three-d">
+    3D Transform
+</div>
+
+</body>
+</html>

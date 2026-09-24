@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Transition</title>
+
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            background: blue;
+
+            transition:
+                width 0.5s,
+                height 0.5s,
+                background 0.5s;
+        }
+
+        .box:hover {
+            width: 250px;
+            height: 250px;
+            background: purple;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Hover over the box</h2>
+
+<div class="box"></div>
+
+</body>
+</html>

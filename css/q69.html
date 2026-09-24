@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sliding Card</title>
+
+    <style>
+        .card {
+            width: 250px;
+            padding: 30px;
+            background: lightblue;
+
+            animation: slide 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes slide {
+
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(300px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+    <h2>Hello!</h2>
+    <p>This card slides from left to right.</p>
+</div>
+
+</body>
+</html>

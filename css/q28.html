@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        /* Descendant */
+        .box p {
+            color: blue;
+        }
+
+        /* Child */
+        .parent > p {
+            background: yellow;
+        }
+
+        /* Adjacent sibling */
+        h2 + p {
+            color: red;
+        }
+
+        /* General sibling */
+        h3 ~ p {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+    <p>Descendant paragraph</p>
+</div>
+
+<div class="parent">
+    <p>Direct child paragraph</p>
+    <section>
+        <p>Nested paragraph</p>
+    </section>
+</div>
+
+<h2>Heading</h2>
+<p>Adjacent sibling</p>
+
+<h3>Another Heading</h3>
+<p>General sibling 1</p>
+<p>General sibling 2</p>
+
+</body>
+</html>

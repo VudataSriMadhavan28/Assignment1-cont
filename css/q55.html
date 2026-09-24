@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sai University</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        header {
+            background: #003366;
+            color: white;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        .hero {
+            background: #e6f2ff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+        }
+
+        .sections {
+            display: flex;
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .card {
+            flex: 1;
+            padding: 30px;
+            background: #f5f5f5;
+            text-align: center;
+        }
+
+        footer {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .sections {
+                flex-direction: column;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>Sai University</h2>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Welcome to Sai University</h1>
+    <p>Learn. Grow. Build Your Future.</p>
+</section>
+
+<section class="sections">
+
+    <div class="card">
+        <h2>Courses</h2>
+        <p>Explore our undergraduate and postgraduate programs.</p>
+    </div>
+
+    <div class="card">
+        <h2>Campus</h2>
+        <p>Enjoy a modern and friendly learning environment.</p>
+    </div>
+
+    <div class="card">
+        <h2>Students</h2>
+        <p>Join a community of talented and creative students.</p>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Sai University
+</footer>
+
+</body>
+</html>

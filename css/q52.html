@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Footer</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .footer-box {
+            min-width: 180px;
+        }
+
+        .footer-box h3 {
+            color: #4da6ff;
+        }
+
+        .footer-box a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin: 8px 0;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 30px;
+            border-top: 1px solid #555;
+            padding-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <h3>About Us</h3>
+            <p>We create simple and useful websites.</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <p>Email: madhavavudata77@gmail.com</p>
+            <p>Phone: 9908939031</p>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 My Website. All Rights Reserved.
+    </div>
+
+</footer>
+
+</body>
+</html>

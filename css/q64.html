@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mobile First</title>
+
+    <style>
+        /* Start with mobile design */
+
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .card {
+            background: #eee;
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+
+        /* Tablet and desktop */
+
+        @media (min-width: 700px) {
+
+            .container {
+                display: flex;
+                gap: 20px;
+            }
+
+            .card {
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Web Design</h2>
+        <p>Creating attractive websites.</p>
+    </div>
+
+    <div class="card">
+        <h2>Development</h2>
+        <p>Building useful web applications.</p>
+    </div>
+
+    <div class="card">
+        <h2>SEO</h2>
+        <p>Improving website visibility.</p>
+    </div>
+
+</div>
+
+</body>
+</html>

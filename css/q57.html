@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Store</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #f5f5f5;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .product {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .product img {
+            width: 100%;
+        }
+
+        .price {
+            font-weight: bold;
+            color: green;
+        }
+
+        button {
+            background: #ff6600;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>ShopEasy</h2>
+    <span>🛒 Cart</span>
+</header>
+
+<section class="products">
+
+    <div class="product">
+        <img src="https://picsum.photos/250/200?1">
+        <h2>Smart Watch</h2>
+        <p class="price">₹2,499</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="https://picsum.photos/250/200?2">
+        <h2>Headphones</h2>
+        <p class="price">₹1,999</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="https://picsum.photos/250/200?3">
+        <h2>Backpack</h2>
+        <p class="price">₹999</p>
+        <button>Add to Cart</button>
+    </div>
+
+</section>
+
+</body>
+</html>

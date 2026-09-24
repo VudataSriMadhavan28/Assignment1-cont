@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Keyframe Animation</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: blue;
+
+            animation: moveBox 3s infinite alternate;
+        }
+
+        @keyframes moveBox {
+
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(400px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box"></div>
+
+</body>
+</html>

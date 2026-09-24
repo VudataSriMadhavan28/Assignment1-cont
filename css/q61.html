@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grid Template Areas</title>
+
+    <style>
+        .page {
+            display: grid;
+
+            grid-template-areas:
+                "header header"
+                "sidebar content"
+                "footer footer";
+
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 80px 1fr 60px;
+
+            min-height: 100vh;
+        }
+
+        header {
+            grid-area: header;
+            background: #222;
+            color: white;
+            padding: 20px;
+        }
+
+        aside {
+            grid-area: sidebar;
+            background: #ddd;
+            padding: 20px;
+        }
+
+        main {
+            grid-area: content;
+            padding: 30px;
+        }
+
+        footer {
+            grid-area: footer;
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .page {
+                grid-template-areas:
+                    "header"
+                    "sidebar"
+                    "content"
+                    "footer";
+
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="page">
+
+    <header>
+        <h2>My Website</h2>
+    </header>
+
+    <aside>
+        <p>Home</p>
+        <p>About</p>
+        <p>Contact</p>
+    </aside>
+
+    <main>
+        <h1>Main Content</h1>
+        <p>CSS Grid template areas make layouts easy to understand.</p>
+    </main>
+
+    <footer>
+        © 2026 My Website
+    </footer>
+
+</div>
+
+</body>
+</html>

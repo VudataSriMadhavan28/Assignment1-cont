@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #eef2f5;
+        }
+
+        .contact {
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        @media (max-width: 600px) {
+            .contact {
+                margin: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="contact">
+
+    <h1>Contact Us</h1>
+
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <input type="text" placeholder="Subject">
+
+        <textarea placeholder="Write your message"></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+</div>
+
+</body>
+</html>

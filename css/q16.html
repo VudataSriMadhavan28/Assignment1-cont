@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Webpage</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .box {
+            flex: 1;
+            padding: 50px;
+            background-color: lightblue;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .container {
+                flex-direction: column;
+            }
+
+            .box {
+                background-color: lightgreen;
+            }
+
+            h1 {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Responsive Webpage</h1>
+
+    <div class="container">
+        <div class="box">Section 1</div>
+        <div class="box">Section 2</div>
+        <div class="box">Section 3</div>
+    </div>
+
+</body>
+</html>

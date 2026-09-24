@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            color: blue;
+        }
+
+        p {
+            color: green;
+        }
+
+        .special {
+            color: orange;
+        }
+
+        #important {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>CSS Specificity Example</h2>
+
+<p>Normal paragraph</p>
+
+<p class="special">Class selector wins over element selector.</p>
+
+<p id="important" class="special">
+    ID selector has higher specificity.
+</p>
+
+</body>
+</html>

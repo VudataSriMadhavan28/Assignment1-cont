@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel World</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .hero {
+            height: 500px;
+            background:
+                linear-gradient(#0006, #0006),
+                url("https://picsum.photos/1400/700");
+            background-size: cover;
+            background-position: center;
+
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+        }
+
+        button {
+            padding: 12px 25px;
+            background: #ff6600;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .places {
+            display: flex;
+            gap: 20px;
+            padding: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .place {
+            width: 250px;
+            padding: 20px;
+            background: #f5f5f5;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<section class="hero">
+    <div>
+        <h1>Explore the World</h1>
+        <p>Your next adventure starts here.</p>
+        <button>Explore Now</button>
+    </div>
+</section>
+
+<section class="places">
+
+    <div class="place">
+        <h2>Goa</h2>
+        <p>Enjoy beautiful beaches and sunsets.</p>
+    </div>
+
+    <div class="place">
+        <h2>Kerala</h2>
+        <p>Experience nature and peaceful backwaters.</p>
+    </div>
+
+    <div class="place">
+        <h2>Manali</h2>
+        <p>Discover mountains and adventure.</p>
+    </div>
+
+</section>
+
+</body>
+</html>

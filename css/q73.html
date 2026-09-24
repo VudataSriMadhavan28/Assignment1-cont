@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Functions</title>
+
+    <style>
+        .container {
+            width: min(90%, 900px);
+            margin: auto;
+        }
+
+        h1 {
+            font-size: clamp(30px, 6vw, 70px);
+        }
+
+        .box {
+            width: max(250px, 50%);
+            background: lightblue;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>CSS Functions</h1>
+
+    <div class="box">
+        This box demonstrates the min() and max() functions.
+    </div>
+
+</div>
+
+</body>
+</html>
