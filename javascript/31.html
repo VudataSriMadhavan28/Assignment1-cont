@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complete Form Validation</title>
+</head>
+
+<body>
+
+<h2>Registration Form</h2>
+
+<form onsubmit="return validateForm()">
+
+    <input id="name" type="text" placeholder="Name">
+    <br><br>
+
+    <input id="email" type="text" placeholder="Email">
+    <br><br>
+
+    <input id="phone" type="text" placeholder="Phone">
+    <br><br>
+
+    <input id="password" type="password" placeholder="Password">
+    <br><br>
+
+    <button type="submit">Register</button>
+
+</form>
+
+<p id="message"></p>
+
+<script>
+
+function validateForm() {
+
+    let name =
+        document.getElementById("name").value.trim();
+
+    let email =
+        document.getElementById("email").value.trim();
+
+    let phone =
+        document.getElementById("phone").value.trim();
+
+    let password =
+        document.getElementById("password").value;
+
+    let emailPattern =
+        /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    let phonePattern =
+        /^[0-9]{10}$/;
+
+    if (name === "") {
+
+        showMessage("Please enter your name.");
+        return false;
+
+    }
+
+    if (!emailPattern.test(email)) {
+
+        showMessage("Please enter a valid email.");
+        return false;
+
+    }
+
+    if (!phonePattern.test(phone)) {
+
+        showMessage("Phone number must contain 10 digits.");
+        return false;
+
+    }
+
+    if (password.length < 6) {
+
+        showMessage("Password must contain at least 6 characters.");
+        return false;
+
+    }
+
+    showMessage("Registration successful!");
+
+    return false;
+}
+
+function showMessage(message) {
+
+    document.getElementById("message").innerHTML = message;
+
+}
+
+</script>
+
+</body>
+</html>

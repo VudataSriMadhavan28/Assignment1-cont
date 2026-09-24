@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fetch API</title>
+</head>
+<body>
+
+<h2>Fetch Data from API</h2>
+<button onclick="getData()">Get Data</button>
+
+<p id="result"></p>
+
+<script>
+function getData() {
+    fetch("https://jsonplaceholder.typicode.com/users/1")
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("result").innerHTML =
+                "Name: " + data.name + "<br>" +
+                "Email: " + data.email;
+        })
+        .catch(error => {
+            console.log("Error:", error);
+        });
+}
+</script>
+
+</body>
+</html>

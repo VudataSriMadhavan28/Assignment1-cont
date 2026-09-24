@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+</head>
+
+<body>
+
+<h2>Registration Form</h2>
+
+<form onsubmit="return validateForm()">
+
+    <input
+        type="text"
+        id="name"
+        placeholder="Enter your name"
+    >
+
+    <br><br>
+
+    <input
+        type="email"
+        id="email"
+        placeholder="Enter your email"
+    >
+
+    <br><br>
+
+    <button type="submit">
+        Submit
+    </button>
+
+</form>
+
+<p id="message"></p>
+
+<script>
+
+function validateForm() {
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+
+    if (name === "" || email === "") {
+
+        document.getElementById("message").innerHTML =
+            "Please fill in all fields.";
+
+        return false;
+    }
+
+    document.getElementById("message").innerHTML =
+        "Form submitted successfully!";
+
+    return false;
+}
+
+</script>
+
+</body>
+</html>

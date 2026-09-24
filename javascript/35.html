@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stopwatch</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            margin-top: 80px;
+        }
+
+        #display {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 12px 20px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Stopwatch</h2>
+
+<div id="display">
+    00:00:00
+</div>
+
+<button onclick="start()">
+    Start
+</button>
+
+<button onclick="stop()">
+    Stop
+</button>
+
+<button onclick="reset()">
+    Reset
+</button>
+
+<script>
+
+let seconds = 0;
+let timer = null;
+
+function updateDisplay() {
+
+    let hours = Math.floor(seconds / 3600);
+
+    let minutes =
+        Math.floor((seconds % 3600) / 60);
+
+    let secs =
+        seconds % 60;
+
+    hours = String(hours).padStart(2, "0");
+    minutes = String(minutes).padStart(2, "0");
+    secs = String(secs).padStart(2, "0");
+
+    document.getElementById("display").innerHTML =
+        hours + ":" + minutes + ":" + secs;
+}
+
+function start() {
+
+    if (timer !== null) {
+        return;
+    }
+
+    timer = setInterval(function() {
+
+        seconds++;
+        updateDisplay();
+
+    }, 1000);
+}
+
+function stop() {
+
+    clearInterval(timer);
+    timer = null;
+}
+
+function reset() {
+
+    stop();
+
+    seconds = 0;
+
+    updateDisplay();
+}
+
+</script>
+
+</body>
+</html>
